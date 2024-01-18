@@ -23,7 +23,7 @@ public class DrugService {
         int inventory = scanner.nextInt();
         Drug drug=new Drug(name,price,inventory);
         boolean result = drugRepository.addDrug(drug);
-        if( result ){
+        if( !result ){
             System.out.println("drug added !");
         }else {
             System.out.println("please try again!");
