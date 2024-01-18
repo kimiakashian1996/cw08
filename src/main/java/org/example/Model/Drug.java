@@ -1,4 +1,4 @@
-package Model;
+package org.example.Model;
 
 public class Drug {
     private int id ;
@@ -56,7 +56,7 @@ public class Drug {
 
     @Override
     public String toString() {
-        return "Drug{" +
+        return "DrugService{" +
                 "id=" + id +
                 ", drugName='" + drugName + '\'' +
                 ", price=" + price +
