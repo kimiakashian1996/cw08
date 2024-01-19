@@ -12,8 +12,6 @@ public class Main {
         menu.menu();
 
 
-
-
 //DrugService drugService= ApplicationContext.getDrugService();
 //
 //drugService.addDrug();

@@ -2,7 +2,7 @@ package org.example.Model;
 
 public class Prescription {
     private int id;
-    private int drugListId ;
+    private int drugListId;
     private int patientId;
     private int totalPrice;
 

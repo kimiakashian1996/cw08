@@ -1,17 +1,14 @@
-
-
-CREATE TABLE IF NOT EXISTS admin
-(
+CREATE TABLE IF NOT EXISTS admin(
     id       SERIAL PRIMARY KEY,
     name     VARCHAR(255),
-    username VARCHAR(255),
+    username VARCHAR(255) UNIQUE ,
     password VARCHAR(255)
-    );
+);
 CREATE TABLE IF NOT EXISTS patient
 (
     id       SERIAL PRIMARY KEY,
     name     VARCHAR(255),
-    username VARCHAR(255),
+    username VARCHAR(255) UNIQUE ,
     password VARCHAR(255)
     );
 CREATE TABLE IF NOT EXISTS drug
