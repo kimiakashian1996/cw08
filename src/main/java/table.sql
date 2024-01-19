@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS drug_list
     drug_id_4 INT REFERENCES drug (id),
     drug_id_5 INT REFERENCES drug (id)
 
-    );
+);
 
 insert into drug values (DEFAULT,'ADRENALINE',10,2);
 insert into drug values (DEFAULT,'NORADRENALINE',20,5);

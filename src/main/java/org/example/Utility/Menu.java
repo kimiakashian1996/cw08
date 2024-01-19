@@ -8,12 +8,15 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Menu {
-    private final DrugService drugService= ApplicationContext.getDrugService();
+    //private final DrugService drugService= ApplicationContext.getDrugService();
     private final AdminService adminService = ApplicationContext.getAdminService();
     private final PatientService patientService = ApplicationContext.getPatientService();
     private final Scanner scanner = new Scanner(System.in);
-    public void menu () throws SQLException {
-        System.out.println("Welcome!");
+
+    private final DrugService drugService = ApplicationContext.getDrugService();
+
+    public void menu () throws Exception {
+        /*System.out.println("Welcome!");
         System.out.println("""
                            Please enter your role: 
                            1, Admin.
@@ -25,8 +28,10 @@ public class Menu {
                 signInOrSignUp();
 
             }
-        }
+        }*/
 
+        int[] i =drugService.getDrugs();
+        drugService.getDrugsName(i);
     }
 
     public void signInOrSignUp() throws SQLException {
